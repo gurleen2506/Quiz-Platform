@@ -1,0 +1,139 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #e9e9e9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #032f3c;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: 0.2s;
+}
+
+.navbar a:hover {
+  color: #ffc107;
+}
+
+/* Carousel */
+.carousel-inner{
+  height:100px;
+  width:100px;
+}
+
+/* Events Section */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.child2quiz {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.child-classquiz {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 32%;
+  text-align: center;
+}
+
+.card-img-top {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Testimonials */
+blockquote {
+  background: #fff;
+  padding: 20px;
+  border-left: 5px solid #007bff;
+  font-style: italic;
+  border-radius: 5px;
+}
+
+/* Features Section */
+#features .col-md-4 {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+}
+
+/* Footer */
+.footer-box {
+  background: #343a40;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-box a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.footer-icons a {
+  color: white;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .child2quiz {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .child-classquiz {
+      width: 90%;
+  }
+
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+  }
+}
